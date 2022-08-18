@@ -1,0 +1,26 @@
+.ubicacion {
+    background-image: linear-gradient(lightcyan, cyan);
+}
+
+.ubicacion--titulo{
+    font-size: 50px;
+    font-family: arial;
+    font-style: oblique;
+    margin-left: 450px;
+    margin-right: 400px; 
+    padding: 20px;
+   
+}
+
+.ubicacion-mapa {
+    background-image: linear-gradient(lightsalmon, lightgreen, lightcyan);
+}
+
+.mapa {
+    margin-left: 350px;
+    margin-right: 300px;
+    border-color: turquoise;
+    border: solid 10px;
+    padding-top: 60px;
+    padding-block-end: 60px;
+}

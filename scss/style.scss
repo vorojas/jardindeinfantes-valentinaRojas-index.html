@@ -1,0 +1,59 @@
+@import "historia";
+
+.titulo--index {
+    background-image: linear-gradient(aquamarine, blueviolet);
+    #tituloprincipal {
+        align-content: center;
+        font-size: 40px;
+        font-family: arial;
+        font-style: oblique;
+        margin-left: 300px;
+        margin-right: 300px;
+        padding: 15px;
+    }
+}
+
+.grid-lista_menu {
+    list-style: none;
+    display: grid;
+    font-size: 20px;
+    font-family: arial;
+    font-style: italic;
+    grid-template-areas: "historia proyectos y objetivos talleres galeria ubicacion contacto ";
+
+    li {
+    transition: 2s linear;
+    width: 80px;
+    height: 20px;
+    &:hover {
+        background-color: lightskyblue;
+        width: 100px;
+        height: 35px;
+    }
+}
+}
+
+.pagina {
+    transition: height 20px 2s;
+    &:hover {
+        background-color: lightgreen;
+        height: 40px;
+    }
+}
+
+$color 
+
+$redes: (
+    twitter: #55acee,
+    facebook: #3a5795,
+    send-mail: #c25e30,
+);
+
+@each $red $color in $redes {
+    .btn--#{red} (
+        background-color: $color;
+    )
+}
+
+
+

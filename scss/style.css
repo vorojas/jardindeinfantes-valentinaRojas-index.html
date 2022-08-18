@@ -1,0 +1,60 @@
+.grid-historia {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.grid-historia .titulo_ {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: coral;
+}
+.grid-historia .contenidos {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: lightgray;
+}
+.grid-historia .subtitulo {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.titulo--index {
+  background-image: linear-gradient(aquamarine, blueviolet);
+}
+.titulo--index #tituloprincipal {
+  align-content: center;
+  font-size: 40px;
+  font-family: arial;
+  font-style: oblique;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 15px;
+}
+
+.grid-lista_menu {
+  list-style: none;
+  display: grid;
+  font-size: 20px;
+  font-family: arial;
+  font-style: italic;
+  grid-template-areas: "historia proyectos y objetivos talleres galeria ubicacion contacto ";
+}
+.grid-lista_menu li {
+  transition: 2s linear;
+  width: 80px;
+  height: 20px;
+}
+.grid-lista_menu li:hover {
+  background-color: lightskyblue;
+  width: 100px;
+  height: 35px;
+}
+
+.pagina {
+  transition: height 20px 2s;
+}
+.pagina:hover {
+  background-color: lightgreen;
+  height: 40px;
+}

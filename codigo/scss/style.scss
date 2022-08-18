@@ -1,0 +1,157 @@
+
+.titulo--index {
+    background-image: linear-gradient(aquamarine, blueviolet);
+    #tituloprincipal {
+        align-content: center;
+        font-size: 40px;
+        font-family: arial;
+        font-style: oblique;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+.grid-lista_menu {
+    list-style: none;
+    display: grid;
+    font-size: 20px;
+    font-family: arial;
+    font-style: italic;
+    grid-template-areas: "historia proyectos y objetivos talleres galeria ubicacion contacto ";
+
+    li {
+    transition: 2s linear;
+    width: 80px;
+    height: 20px;
+    &:hover {
+        background-color: lightskyblue;
+        width: 100px;
+        height: 35px;
+    }
+}
+}
+
+.imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.image-presentacion {
+    display: flex;
+    background-color: lightgrey;
+    border: 15px solid pink;
+    height: 450px;
+    width: 700px;
+    padding: 10px;
+   
+}
+
+.aside {
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.image-contacto {
+    grid-template-columns: auto;
+    background-color: lightsalmon;
+    border-radius: 20px;
+    margin:30px;
+    height: 80px;
+    width: 80px;
+    justify-items: center;
+    padding: 10px;
+}
+
+@keyframes efecto {
+    0% { width: 100px;}
+    15% { width: 60px; background-color: cyan;}
+    30% { width: 100px; background-color: aqua;}
+    50% { width: 80px; background-color: lightgreen;}
+    70% { width: 100px;}
+    80% { width: 90px;}
+    90% {width: 120px;}
+    100% { width: 200px; background-color: aquamarine;}
+    
+}
+
+.pagina {
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#tituloprincipal {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+
+.pagina {
+    transition: height 20px 2s;
+    &:hover {
+        background-color: lightgreen;
+        height: 40px;
+    }
+}
+
+@each $color in blue, green, violet {
+    .#{$color} {
+        color: #{color}
+    }
+}
+
+$redes: (
+    instagram: rgb(148, 44, 148),
+    facebook: #1f3a75,
+    whatsapp: rgb(7, 179, 7),
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+
+}
+
+$estilos: (
+color: rgb(7, 179, 7),
+centro: center,
+tFuente: 30px,
+);
+
+aside .div .a {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, tFuente);
+}
+
+@import "historia";
+
+@import "talleres";
+
+@import "galeria";
+
+@import "contacto";
+
+@import "ubicacion";
+
+@import "footer";

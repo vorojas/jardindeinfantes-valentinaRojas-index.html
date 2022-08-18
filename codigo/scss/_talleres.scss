@@ -1,0 +1,59 @@
+.titulo-t {
+    background-image: linear-gradient(aquamarine, blueviolet);
+    
+}
+
+.titulo__talleres--uppercase {
+    font-size: 30px;
+    font-family: arial;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo__talleres {
+    background-image: linear-gradient(to right, lightsalmon, aqua); 
+    font-style: italic;
+    font-family: arial;
+    padding: 15px;
+    
+}
+
+.informacion {
+    font-size: 16px;
+    font-family: arial;
+    padding: 10px;
+}
+
+.informacion:hover {
+    background-color: palegreen;
+    transform: scale(1, 1.5);
+    transition: 4s;
+}
+.card-talleres {
+    background-color: beige;
+}
+
+#carouselContainer {
+    width: 620px;
+    height: 240px;
+}
+
+.card {
+    width: 100;
+    height: 100;
+}
+
+.bordesredondeados {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px; 
+    display: inline;
+}
+
+
