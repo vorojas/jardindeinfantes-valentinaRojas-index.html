@@ -33,4 +33,15 @@
 
 .btn {
     background-color: lightgreen;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
 }
+
+.btn--limpiar {
+    @extend .btn;
+    background-color: rgb(211, 74, 25);
+}
+

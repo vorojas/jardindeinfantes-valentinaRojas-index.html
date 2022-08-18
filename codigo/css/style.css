@@ -297,8 +297,16 @@ aside .div .a {
   font-style: italic;
   line-height: 20px; }
 
-.btn {
-  background-color: lightgreen; }
+.btn, .btn--limpiar {
+  background-color: lightgreen;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px; }
+
+.btn--limpiar {
+  background-color: #d34a19; }
 
 .ubicacion {
   background-image: linear-gradient(lightcyan, cyan); }
